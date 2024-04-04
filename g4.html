@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(gallery/g3/read.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        h1 {
+            color: #CD1000;
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: white; /* Change color to white */
+            font-size: 4em; /* Increase font size */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            object-fit: cover;
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Decreased hover effect */
+        }
+
+        /* Responsive adjustments */
+        @media only screen and (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        /* footer CSS*/
+        footer {
+          text-align: center;
+          font-size: 2em;
+          padding-bottom: 100px;
+        }
+
+        .foot a{
+          color: floralwhite;
+          border-radius: 12px;
+          padding: 5px 10px;
+        }
+
+        .foot a:hover,
+        .foot a:active{
+          background-color: floralwhite;
+          color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product</h1>
+    <hr> <!-- Horizontal line below the "Gallery" text -->
+    <div class="gallery">
+        <img src="gallery/g4/photo1.webp" alt="Image 1">
+        <img src="gallery/g4/photo2.webp" alt="Image 2">
+        <img src="gallery/g4/photo3.jpeg" alt="Image 3">
+        <img src="gallery/g4/photo4.webp" alt="Image 4">
+        <img src="gallery/g4/photo5.jpeg" alt="Image 5">
+        <img src="gallery/g4/photo6.webp" alt="Image 6">
+        <img src="gallery/g4/photo7.jpeg" alt="Image 7">
+        <img src="gallery/g4/photo8.webp" alt="Image 8">
+        <img src="gallery/g4/photo9.jpeg" alt="Image 9">
+        <img src="gallery/g4/photo10.jpeg" alt="Image 10">
+        <img src="gallery/g4/photo11.webp" alt="Image 11">
+        <img src="gallery/g4/photo12.webp" alt="Image 12">
+        <img src="gallery/g4/photo13.webp" alt="Image 13">
+        <img src="gallery/g4/photo14.webp" alt="Image 14">
+        <img src="gallery/g4/photo15.jpeg" alt="Image 15">
+        <img src="gallery/g4/photo16.webp" alt="Image 16">
+        <img src="gallery/g4/photo17.jpeg" alt="Image 17">
+        <img src="gallery/g4/photo18.webp" alt="Image 18">
+    </div>
+    <hr>
+
+    <footer>
+        <p class="foot"><a href="Photostudio.html#gallery">Back ></a></p>
+    </footer>
+</body>
+</html>

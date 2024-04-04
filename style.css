@@ -1,0 +1,676 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,
+body {
+	background-color:#fff;
+	color:#000;
+	text-rendering:optimizeLegibility;
+	font-size:16px;
+	font-family:'Work Sans','Arial',sans-serif;
+	scroll-behavior: smooth;
+
+
+}
+
+
+
+
+/* This is for font from (google fonts) */
+
+
+
+
+.libre-caslon text-regular {
+	font-family: "Libre Caslon Text", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .libre-caslon text-bold {
+	font-family: "Libre Caslon Text", serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .libre-caslon text-regular-italic {
+	font-family: "Libre Caslon Text", serif;
+	font-weight: 400;
+	font-style: italic;
+  }
+  
+  
+
+
+/* This css is for all the header and head used */
+
+
+
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.6)),url(images/woman.jpg
+    );
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center 20%;
+	position: relative;
+}
+
+
+.header-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: "Libre Caslon Text", serif;
+	font-size: 1.5em;
+}
+
+.header-text{
+    margin-bottom : 80px;
+	/* font-family: "Lobster Two", sans-serif; */
+}
+
+
+h1{
+	font-size: 300%;
+	color: #fff;
+	font-weight: 350;
+	margin-bottom: 15px;
+}
+
+h2{
+	font-size: 100%;
+	color: #fff;
+	font-weight: 400;
+}
+
+
+
+
+/* this is for CTA (Call to Action) css */
+
+
+.btn:link,
+.btn:visited {
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 20PX;
+	/* border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	border-bottom-right-radius:9px ;
+	border-bottom-left-radius:9px ; */
+}
+.btn-full:link,
+.btn-full:visited {
+	background-color: #FF4200;
+	color: #fff;
+}
+
+.btn:hover,
+.btn:active{
+	background-color: #CD1000;
+}
+
+
+
+
+/* This is logo css */
+
+
+
+.logo img{
+	height: 150px;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+
+
+/* This is nav css */
+
+
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    text-align: in;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+
+section nav ul li{
+        display: inline-block;
+        margin-right: 18px;
+}
+
+.all-nav{
+	height: 90px;
+}
+
+section nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section nav ul li {
+    margin-right: 20px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+	
+}
+
+section nav ul li a:hover {
+    background-color: #ff4200;
+    color: white;
+}
+
+
+
+
+/* ABOUT SECTION */
+
+
+
+
+
+
+
+
+.about{
+	width: 70%;
+	border-radius: 100px;
+	margin-bottom: 100px;
+	margin-right: 50px;
+}
+
+.about-heading{
+	color: #000;
+	font-size: 250%;
+	font-weight: 500;
+	margin-bottom: 50px;
+	margin-left: 70px;
+}
+
+.about-para{
+	color: #555;
+	margin-bottom: 50px;
+	margin-left: 70px;
+}
+
+.about-box{
+	margin-top: 100px;
+	/* margin-left: 30px; */
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited{
+	border: 2px solid#FF4200;
+	color: #FF4200 ;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+	background-color: #CD1000;
+	color: #fff;
+}
+
+.about-box:first-child {
+	text-align: left;
+}
+
+.about-box:last-child{
+	text-align: right;
+}
+
+.btn{
+	margin-left: 70px;
+}
+
+.row{
+	font-family: "Grand Hotel", sans-serif;
+	font-size: 1.5em;
+}
+
+
+/* Gallery */
+
+
+.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery{
+	display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.img-box{
+	width: 100px;
+	height: 500px;
+	margin: 10px;
+	border-radius: 50px;
+	background: url(images/Portrait.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: width 0.5s;
+}
+
+.img-box:nth-child(2){
+	background: url(images/wedding.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(3){
+	background: url(images/model.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(4){
+	background: url(images/product.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box h3{
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	opacity: 0;
+	transition: botoom 0.5s, opacity 0.5;
+}
+
+.img-box:hover{
+	width: 300px;
+	cursor: pointer;
+}
+
+.img-box:hover h3{
+	opacity: 1;
+	bottom: 25px;
+}
+
+
+/* Gallery heading CSS */
+
+
+#gallery h2 {
+    font-family: "Libre Caslon Text", serif;
+    margin-top: 100px;
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Increased shadow effect */
+}
+
+
+
+/* Table CSS */
+
+
+/* h2(PACKAGES) CSS */
+.hP {
+    text-align: center; 
+    margin-top: 100px;
+    font-size: 3.5em; 
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	position: relative;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* FULL PACK DIV ID CSS */
+
+
+#pack{
+	max-width: 100%;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 4px 9px rgba(0.9, 0.9, 0.9, 0.9);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* grid-gap: 0px; */
+	text-align: center;
+	
+}
+
+
+/* all 3 tables css (package as class) */
+
+
+.package {
+	padding: 40px;
+	margin: 10px;
+	border: 2px solid #ddd;
+	border-radius: 9px;
+	background-color: #f9f9f9;
+	box-shadow: 0 2px 4px rgba(0.9, 0.9, 0.9, 0.9);
+}
+
+
+/* for headings(basic,standard,premium) */
+
+
+.package h2 {
+	margin-top: 0;
+	color: floralwhite;
+    font-weight: bold;
+	font-size: 1.5em;
+}
+
+.package table {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.package table th,
+.package table td {
+	padding: 9px;
+	text-align: left;
+}
+
+.package table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.package table th,
+.package table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.package table th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.package table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.package table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+
+/* to add image in tables */
+
+
+.pack1{
+	background-image: url(images/table1.webp);
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.pack2{
+	background-image: url(images/table2.jpeg);
+	background-position: center;
+	background-size: cover;
+} 
+
+.pack3{
+	background-image: url(images/table3.jpg);
+	background-position: center;
+	background-size: cover;
+
+}
+
+
+/* table hover effect */
+
+
+.package:hover {
+    transform: scale(1.1); /* Scale the package on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+
+
+
+/* BOOKING CSS */
+
+.main_bg{
+    background-image: url(images/black.jpg);
+    max-width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.form{
+    width: 650px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+    margin: 0 10px;
+
+}
+.form-text h1{
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-text p{
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid  #FF4200;;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid  #FF4200;;
+    font-size: 20px;
+    color: floralwhite;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: floralwhite;
+    font-size: 25px;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+}
+#submit input{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color:  #FF4200 !important;
+    color: #fff !important;
+    transition: all .3s;
+}
+#submit input:hover{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: #CD1000 !important;
+    color: #fff !important;
+}
+#submit input:active{
+    font-size: 19px;
+    background-color: rgb(46, 20, 5) !important;
+    color: #fff !important;
+}
+
+
+
+/* responsive booking form */
+
+
+
+@media screen and (max-width:710px) {
+    .main-form{
+        text-align: center;
+    }
+}
+
+
+
+/* footer CSS */
+
+
+/* Footer */
+footer{
+	background: #343434;
+	padding-top: 50px;
+}
+.fcontainer{
+	width: 1140px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.footer-content{
+	width: 33.3%;
+}
+h3{
+	font-size: 28px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.footer-content p{
+	width:190px;
+	margin: auto;
+	padding: 7px;
+}
+.footer-content ul{
+	text-align: center;
+}
+.list{
+	padding: 0;
+}
+.list li{
+	width: auto;
+	text-align: center;
+	list-style-type:none;
+	padding: 7px;
+	position: relative;
+}
+.list li::before{
+	content: '';
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 100%;
+	width: 0;
+	height: 2px;
+	background:  #FF4200;
+	transition-duration: .5s;
+}
+.list li:hover::before{
+	width: 70px;
+}
+.social-icons{
+	text-align: center;
+	padding: 0;
+}
+.social-icons li{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+.social-icons i{
+	color: white;
+	font-size: 25px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #FF4200;
+}
+.social-icons i:hover{
+	color: #FF4200;
+}
+.bottom-bar{
+	background: #FF4200;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 50px;
+}
+.bottom-bar p{
+	/* color: #343434; */
+	margin: 0;
+	font-size: 16px;
+	padding: 7px;
+}
+
+/* Footer text color */
+.footer-content, .bottom-bar {
+    color: white;
+}
+
+
